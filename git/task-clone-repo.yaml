@@ -308,7 +308,7 @@ spec:
         echo "Repository $REPOSITORY successfully cloned"
         set -e
 
-         _log_command='git log --git-dir=$DIRECTORY_NAME'
+         _log_command='git log --git-dir=./$DIRECTORY_NAME'
          eval "$_log_command"
          set -e 
         
