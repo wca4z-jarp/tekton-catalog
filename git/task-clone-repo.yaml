@@ -283,7 +283,7 @@ spec:
             echo "No branch or revision provided."
             _clone_command='git clone -q -n $GIT_URL $DIRECTORY_NAME'
           else
-            _clone_command='git clone -q -b "$BRANCH" $GIT_URL $DIRECTORY_NAME'
+            _clone_command='git clone -b "$BRANCH" $GIT_URL $DIRECTORY_NAME'
           fi
         fi
         _max_retry=$(params.git-max-retry)
