@@ -308,6 +308,8 @@ spec:
         echo "Repository $REPOSITORY successfully cloned"
         set -e
 
+        git log
+
         current_dir=$(pwd)
         if [ -z "$DIRECTORY_NAME" ]; then
           # Find the "humanish" part of the git source repository that corresponds to the clone directory
