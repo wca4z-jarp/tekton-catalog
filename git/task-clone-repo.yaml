@@ -272,7 +272,7 @@ spec:
             # No branch provided
             _clone_command='git clone -q -n $GIT_URL $DIRECTORY_NAME'
           elif git ls-remote --heads --exit-code $GIT_URL $BRANCH > /dev/null 2>&1; then
-            _clone_command='git clone -q -b "$BRANCH" $GIT_URL $DIRECTORY_NAME'
+            _clone_command='git clone -b "$BRANCH" $GIT_URL $DIRECTORY_NAME'
           else
             echo "branch $BRANCH does not exists in $REPOSITORY"
             _clone_command='git clone -q -n $GIT_URL $DIRECTORY_NAME'
