@@ -308,8 +308,10 @@ spec:
         echo "Repository $REPOSITORY successfully cloned"
         set -e
 
+        # Extra debugging, by Fernando Lopez
         cd $DIRECTORY_NAME
-        git log
+        #git log
+        git status
         cd ..
         
         current_dir=$(pwd)
