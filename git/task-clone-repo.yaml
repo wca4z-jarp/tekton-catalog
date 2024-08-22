@@ -308,7 +308,7 @@ spec:
         echo "Repository $REPOSITORY successfully cloned"
         set -e
 
-        cd DIRECTORY_NAME
+        cd $DIRECTORY_NAME
         git log
         cd ..
         
