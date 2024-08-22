@@ -309,7 +309,7 @@ spec:
         set -e
 
          _log_command='git log --git-dir=$DIRECTORY_NAME'
-         eval "_log_command"
+         eval "$_log_command"
          set -e 
         
         current_dir=$(pwd)
