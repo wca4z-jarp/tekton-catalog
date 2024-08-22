@@ -312,6 +312,7 @@ spec:
         cd $DIRECTORY_NAME
         #git log
         git status
+        ls -alhtR
         cd ..
         
         current_dir=$(pwd)
